@@ -209,7 +209,7 @@ function onAssetsLoaded () {
     topBarScrollArea.addChild(sprite);
     streams.push(
       rxjs
-        .fromEvent(sprite, "pointerup")
+        .fromEvent(sprite, "pointertap")
         .pipe(
           rxjs.operators.map(e => ({
             name: texturesPath[i],
